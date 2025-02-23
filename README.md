@@ -8,7 +8,6 @@ El siguiente proyecto de final de seminario de ciencias de datos tiene como obje
 
 ## Contenido
 
-
 - [Variables del dataset](#variables-del-dataset)
     - [Factores generales](#factores-generales)
     - [Factores desencadenantes](#factores-desencadenantes)
@@ -16,12 +15,14 @@ El siguiente proyecto de final de seminario de ciencias de datos tiene como obje
 - [Instalación](#instalación)
 - [Generar modelos](#generar-modelos)
 - [Correr API](#correr-api)
+- [Construido con](#construido-con)
+- [Autor](#autor)
 
-## Variables del dataset
+## Variables del dataset 📋
 
 Las variables de este dataset se dividen en tres categorías: factores generales, factores desencadenantes y factores de riesgo. A continuación se describen cada una de las variables:
 
-### Factores generales
+### Factores generales 📋
 
 | Nombre       | Descripción                                         | Typo         |      Valor               |
 | ------------ | ------------                                        | ------------ | ------------             |
@@ -30,7 +31,7 @@ Las variables de este dataset se dividen en tres categorías: factores generales
 | sexo_        |  Sexo de la victima                                 |  Number      | 1: Masculino 0: Femenino |
 | inten_prev   |  El paciente ha tenido intentos previos de suicidio |  Number      | 1: Sí 0: No              |
 
-### Factores desencadenantes
+### Factores desencadenantes 📋
 
 | Nombre             | Descripción                                  | Typo         | Valor        |
 | ------------       | ------------                                 | ------------ | ------------ |
@@ -45,7 +46,7 @@ Las variables de este dataset se dividen en tres categorías: factores generales
 | prob_labor         | Problemas laborales                          |  Number      | 1: Sí 0: No  |
 | prob_famil         | Problemas familiares                         |  Number      | 1: Sí 0: No  |
 
-### Factores de riesgo
+### Factores de riesgo 📋
 
 | Nombre             | Descripción                                            | Typo         | Valor        |
 | ------------       | ------------                                           | ------------ | ------------ |
@@ -62,7 +63,7 @@ Las variables de este dataset se dividen en tres categorías: factores generales
 | abuso_alco         | Abuso de alcohol (solo si antec_tran)                  |  Number      | 1: Sí 0: No  |
 
 'prob_consu', 'hist_famil', 'idea_suici', 'plan_suici', 'antec_tran', 'tran_depre', 'trast_personalidad', 'trast_bipolaridad', 'esquizofre','antec_v_a', 'abuso_alc
-## Instalación
+## Instalación 🔧
 
 1. Configurar el entorno virtual
 
@@ -76,7 +77,7 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-## Generar modelos
+## Generar modelos 🚀
 
 Logistic Regression
 
@@ -89,8 +90,23 @@ Random Forest
 python RandomForest.py
 ```
 
-## Correr API
+## Correr API 🚀
 
 ```bash
 fastapi dev main.py
 ```
+
+## Construido con 🛠️
+
+* [Python](https://www.python.org/) - El lenguaje de programación usado.
+* [Pandas](https://pandas.pydata.org/) - Librería de manipulación y análisis de datos.
+* [Numpy](https://numpy.org/) - Librería para cálculos numéricos.
+* [Matplotlib](https://matplotlib.org/) - Librería para la generación de gráficos.
+* [Seaborn](https://seaborn.pydata.org/) - Librería para la visualización de datos.
+* [Scikit-learn](https://scikit-learn.org/stable/) - Librería para machine learning.
+* [Joblib](https://joblib.readthedocs.io/en/latest/) - Librería para guardar y cargar modelos.
+* [FastAPI](https://fastapi.tiangolo.com/) - Framework para la creación de APIs.
+
+## Autor ✒️
+
+* **Fabian Franco** - *Investigación y Desarrollo* - [Fabian Franco](https://github.com/fabian-franco)
